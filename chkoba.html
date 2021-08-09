@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+
+<style>
+    
+    
+    .rotateimg180 {
+  -webkit-transform:rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+    
+    img{
+    
+    cursor: pointer;
+    width: 120px;
+    height: 240px;    
+        
+    }    
+    
+
+    
+</style>    
+    
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+</head>
+<body>
+    
+   
+<p class="left w3-panel w3-green" style="position: absolute; top: 80px ; left: 100px"> Player 1 score : <span id="player1-score">0</span> </p>        
+    
+<div class="w3-row" style="position: absolute ; left: 30% ; top: 5px">
+
+ 
+    
+<div class="w3-center" id="player1">
+
+
+<img id="card1" onclick="player1(0,'card1')" class="w3-animate-left">
+<img id="card2" onclick="player1(1,'card2')" class="w3-animate-left">
+<img id="card3" onclick="player1(2,'card3')" class="w3-animate-left">
+<img id="card4" onclick="player1(3,'card4')" class="w3-animate-left">   
+    
+</div>
+    
+</div>    
+
+
+    
+    
+<div class="w3-row" style="position: absolute ; top: 200px ; left: 2%">
+    <div class="w3-center" id="mekle">
+<img id="mekle0" class="w3-animate-left rotateimg180">
+<img id="mekle1" class="w3-animate-left rotateimg180">
+<img id="mekle2" class="w3-animate-left rotateimg180">
+<img id="mekle3" class="w3-animate-left rotateimg180">    
+</div>
+    
+</div>    
+    
+    
+    <p class="left w3-panel w3-green" style="position: absolute; top: 500px;left: 100px"> Player 2 score : <span id="player2-score">0</span> </p>        
+
+<div class="w3-row" style="position: absolute ; top: 400px ; left: 30%">
+
+    
+    
+<div class="w3-center" id="player2">
+    
+<img id="card_1" onclick="player2(0,'card_1')" class="w3-animate-left">
+<img id="card_2" onclick="player2(1,'card_2')" class="w3-animate-left">
+<img id="card_3" onclick="player2(2,'card_3')" class="w3-animate-left">
+<img id="card_4" onclick="player2(3,'card_4')" class="w3-animate-left">    
+</div>
+</div>    
+    
+    
+    
+    
+<button type="button" onclick="restart()" class="w3-button w3-black"> Distributer </button>    
+    
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-red">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Game over</p>
+        
+      </div>
+    </div>
+    </div>
+    
+<script src="script.js"></script>     
+</body>
+
+</html>
+
+
